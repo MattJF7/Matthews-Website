@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="background-color: #0a0a0a;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An 18-year-old from Canada interested in operating systems, frontend development, and computers.">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="./assets/fonts/Inter_18pt-Bold.ttf" as="font" type="font/truetype" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inter_18pt-Black.ttf" as="font" type="font/truetype" crossorigin>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mattfj7.cc/">
+    <meta property="og:title" content="Matthew's Website">
+    <meta property="og:description" content="An 18-year-old from Canada interested in operating systems, frontend development, and computers.">
+    <meta property="og:image" content="./assets/images/logo.webp">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mattfj7.cc/">
+    <meta property="twitter:title" content="Matthew's Website">
+    <meta property="twitter:description" content="An 18-year-old from Canada interested in operating systems, frontend development, and computers.">
+    <meta property="twitter:image" content="./assets/images/logo.webp">
+
+    <link rel="icon" type="image/webp" href="./assets/images/logo.webp">
+    <title>Matthew's Website</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="site-loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <div class="dot-grid"></div>
+
+    <div id="main-content">
+        <header class="glass-header">
+            <nav class="max-w-6xl flex justify-between items-center">
+                <a href="/" class="flex items-center js-home" aria-label="Home">
+                    <img src="./assets/images/logo.webp" width="35" height="35" style="width:2.2rem; height:auto; border-radius:5px; margin-right:0.75rem" alt="Logo">
+                    <span style="font-size:1.4rem; font-weight:800; letter-spacing:-0.05em">Matthew</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#about" class="js-scroll">About</a>
+                    <a href="#contributions" class="js-scroll">Contributions</a>
+                    <a href="#socials" class="js-social-toggle">Socials</a>
+                </div>
+
+                <div style="background:rgba(17,24,39,0.6); border:1px solid rgba(255,255,255,0.08); padding:0.5rem 0.9rem; border-radius:8px; font-size:0.95rem; font-family:monospace; display:flex; align-items:center; gap:0.5rem; font-weight:600; min-width:110px">
+                    <svg class="icon-inline" style="width:1.1rem; height:1.1rem" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span id="time-clock">00:00:00 PM</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-gradient">
+                <div class="max-w-6xl text-center reveal active">
+                    <div id="badge-container" class="status-badge">
+                        <div id="status-dot" class="status-dot"></div>
+                        <span id="status-text" style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#d1d5db">Connecting...</span>
+                    </div>
+                    
+                    <h1 class="hero-title">Hi, I'm Matthew.</h1>
+                    <p style="color:#d1d5db; font-size:1.25rem; max-width:42rem; margin:2rem auto">An 18-year-old from Canada interested in operating systems, frontend development, and computers.</p>
+                    
+                    <a href="#socials" class="social-btn js-social-toggle">
+                        <svg class="icon-inline" style="width:1.1rem; height:1.1rem" viewBox="0 0 24 24">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <path d="m8.59 13.51 6.83 3.98"></path>
+                            <path d="m15.41 6.51-6.82 3.98"></path>
+                        </svg> Connect with me
+                    </a>
+
+                    <div style="margin-top:3rem">
+                        <a href="#about" class="js-scroll" style="display:inline-block" aria-label="Scroll to About section">
+                            <svg class="icon-inline" style="width:2rem; height:2rem; color:#a1a1aa; animation:bounce 1.5s infinite" viewBox="0 0 24 24">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" style="background:rgba(28,57,88,0.1); border-top:1px solid rgba(28,57,88,0.2); border-bottom:1px solid rgba(28,57,88,0.2)" class="py-32">
+                <div class="max-w-6xl grid md:grid-cols-2 reveal" style="gap:4rem; align-items:center">
+                    <div>
+                        <h2 style="font-size:2.25rem; font-weight:700; margin-bottom:2rem">About Me</h2>
+                        <p style="color:#d1d5db; font-size:1.125rem; margin-bottom:1.5rem; line-height:1.6">I have been building computers since 2018. Tweaking and optimizing operating systems and hardware is a hobby of mine.</p>
+                        <p style="color:#d1d5db; font-size:1.125rem; line-height:1.6">In my free time, I enjoy playing Rainbow Six Siege, CS2, and Overwatch.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 style="font-size:1.25rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:1.5rem; color:#e5e7eb">Tech Stack</h3>
+                        <div class="grid" style="grid-template-columns:repeat(3,1fr); gap:1rem">
+                            <div class="interactive-element rounded-lg" style="padding:1.5rem; align-items:center; justify-content:center; gap:0.5rem">
+                                <img src="./assets/images/html_logo.webp" width="48" height="48" alt="HTML">
+                                <span style="font-size:0.75rem; font-weight:700">HTML</span>
+                            </div>
+                            <div class="interactive-element rounded-lg" style="padding:1.5rem; align-items:center; justify-content:center; gap:0.5rem">
+                                <img src="./assets/images/css_logo.webp" width="48" height="48" alt="CSS">
+                                <span style="font-size:0.75rem; font-weight:700">CSS</span>
+                            </div>
+                            <div class="interactive-element rounded-lg" style="padding:1.5rem; align-items:center; justify-content:center; gap:0.5rem">
+                                <img src="./assets/images/javascript_logo.webp" width="48" height="48" alt="JS">
+                                <span style="font-size:0.75rem; font-weight:700">JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="software" class="py-32">
+                <div class="max-w-6xl">
+                    <div class="text-center" style="margin-bottom:4rem">
+                        <h2 style="font-size:1.875rem; font-weight:700; margin-bottom:1rem">Bookmarked Software</h2>
+                        <p style="color:#d1d5db">Tools and projects I recommend.</p>
+                    </div>
+                    <div class="software-container">
+                        <div id="software-track" class="software-track"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contributions" class="py-32" style="background:rgba(28,57,88,0.1); border-top:1px solid rgba(28,57,88,0.2); border-bottom:1px solid rgba(28,57,88,0.2)">
+                <div class="max-w-6xl reveal">
+                    <div class="text-center" style="margin-bottom:4rem">
+                        <h2 style="font-size:1.875rem; font-weight:700; margin-bottom:1rem">Contributions</h2>
+                        <p style="color:#d1d5db">Projects I've helped build or support.</p>
+                    </div>
+                    <div class="grid md:grid-cols-2" style="max-width:50rem; margin:0 auto">
+                        <a href="https://github.com/zoicware/ZOICWARE" target="_blank" rel="noopener" class="interactive-element rounded-xl" style="padding:1.5rem; gap:1rem">
+                            <div class="flex items-center" style="gap:1rem">
+                                <img src="./assets/images/powershell_logo.webp" width="40" height="40" style="width:2.5rem; height:auto; border-radius:8px" alt="Zoicware">
+                                <span style="font-weight:700">Zoicware</span>
+                            </div>
+                            <p style="font-size:0.875rem; color:#d1d5db; margin:0">A PowerShell app to tweak and customize Windows focusing on performance.</p>
+                        </a>
+                        <a href="https://github.com/MattJF7/LeanBrave" target="_blank" rel="noopener" class="interactive-element rounded-xl" style="padding:1.5rem; gap:1rem">
+                            <div class="flex items-center" style="gap:1rem">
+                                <img src="./assets/images/leanbrave_logo.webp" width="40" height="40" style="width:2.5rem; height:auto; border-radius:8px" alt="LeanBrave">
+                                <span style="font-weight:700">LeanBrave</span>
+                            </div>
+                            <p style="font-size:0.875rem; color:#d1d5db; margin:0">A script designed to streamline and debloat the Brave Browser.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer style="background:rgba(10,10,10,0.4); backdrop-filter:blur(16px); border-top:1px solid rgba(255,255,255,0.05); padding:4rem 0; text-align:center">
+            <div class="max-w-6xl reveal">
+                <div style="font-size:14px; opacity:0.6; letter-spacing:0.15em; font-weight:700; text-transform:uppercase">© 2026 Matthew All Rights Reserved</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="socials-overlay" class="social-overlay">
+        <div class="social-container">
+            <h1 style="font-weight:900; margin-bottom:2rem; font-size:2rem">Connect with me</h1>
+            <a href="https://discord.com/users/1483670658977370415" target="_blank" rel="noopener" class="social-card">
+                <img src="./assets/images/discord_logo.webp" width="24" height="24" style="width:1.5rem" alt="Discord">
+                <strong>Discord</strong>
+            </a>
+            <a href="https://steamcommunity.com/id/MattJF7/" target="_blank" rel="noopener" class="social-card">
+                <img src="./assets/images/steam_logo.webp" width="24" height="24" style="width:1.5rem" alt="Steam">
+                <strong>Steam</strong>
+            </a>
+            <a href="/" class="js-social-toggle js-home" style="color:#64748b; font-weight:700; margin-top:2rem; display:inline-flex; align-items:center; gap:0.5rem" aria-label="Close socials overlay">
+                <svg class="icon-inline" style="width:1rem; height:1rem" viewBox="0 0 24 24">
+                    <path d="m12 19-7-7 7-7"></path>
+                    <path d="M19 12H5"></path>
+                </svg> Back to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>
